@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background: url("../image/bg.png") repeat;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkgreen;
+        }
+
+        /***************头部*******************/
+        #header-width {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #header-width a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header-outer {
+            width: 100%;
+            background: white;
+
+        }
+
+        #header-LOGO {
+            margin: 20px 70px 20px 0;
+        }
+
+        .nav {
+            padding: 27px;
+            border-bottom: 2px solid black;
+        }
+
+        .nav a {
+            font-weight: bold;
+        }
+
+        .navs {
+            padding: 27px;
+        }
+
+        #header-right img {
+            width: 45px;
+            height: 45px;
+        }
+
+        #header-right div:nth-child(1) {
+            border: 1px solid darkgreen;
+            border-radius: 30px;
+            padding: 12px 25px;
+            color: darkgreen;
+            margin-top: 12px;
+        }
+
+        #header-right div:nth-child(2) {
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+
+        /*************  content  ***************/
+        #content {
+            width: 960px;
+            margin: 40px auto;
+            overflow: hidden;
+
+        }
+
+        /*************  content2  ***************/
+        #content2_bigBlock {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        #content2_bigBlock a:hover {
+            color: darkgreen;
+        }
+
+        #content2 {
+            width: 960px;
+            margin: 60px auto;
+        }
+
+        #content2_top span:nth-child(2) {
+            margin: 0 20px;
+        }
+
+        .content2_block {
+            background-color: white;
+            border: 1px solid rgb(226, 226, 226);
+        }
+
+        .content2_block > div:nth-child(2) a {
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            margin: 10px 0 5px 10px;
+        }
+
+        .content2_block > div:nth-child(3) a {
+            text-decoration: none;
+            font-size: 10px;
+            color: black;
+            margin: 10px 0 5px 10px;
+        }
+
+        .content2_block > div:nth-child(4) {
+            text-decoration: none;
+            font-size: 10px;
+            color: black;
+            margin: 10px 0 5px 10px;
+        }
+
+        #content2_block_2 {
+            margin: 0 25px;
+        }
+
+        /*********** 阅读 **************/
+        #read {
+            width: 960px;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+
+        #read_top span {
+            margin-left: 20px;
+        }
+
+        .read_block {
+            border: 1px solid rgb(226, 226, 226);
+            height: 216px;
+            background-color: white;
+            margin: 40px 0 20px 0;
+        }
+
+        .read_block_left {
+            width: 650px;
+        }
+
+        .read_block_1 {
+            margin: 10px 10px;
+        }
+
+        .read_block_1 a {
+            font-size: 25px;
+        }
+
+        .read_block_2 {
+            margin: 3px 10px;
+        }
+
+        .read_block_2 a {
+            font-size: 15px;
+        }
+
+        .line {
+            width: 30px;
+            border: 1px solid black;
+            margin: 5px 10px;
+        }
+
+        .read_block_3 {
+            margin: 3px 10px;
+        }
+
+        .read_block_3 span {
+            font-size: 13px;
+        }
+
+        .read_block_3 a {
+            color: green;
+        }
+
+        .read_block_3 a:hover {
+            color: darkgreen;
+        }
+
+        .read_block_4 {
+            font-size: 12px;
+            margin: 50px 0 10px 10px;
+        }
+
+        /************人气片客| 热门钢琴*************/
+
+        #star_headline {
+            width: 960px;
+            margin: 50px auto 20px;
+        }
+        #star_headline span {
+            margin-left: 20px;
+        }
+
+        #star {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .star_block {
+            background-image: url("../image/download-16.png");
+            width: 230px;
+            height: 230px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!--header-->
+<div id="header-outer">
+    <div id="header-width">
+        <img src="../image/download-12.png" alt="" class="left" id="header-LOGO">
+        <div class="left nav"><a href="">首页</a></div>
+        <div class="left navs"><a href="">阅读</a></div>
+        <div class="left navs"><a href="">电台</a></div>
+        <div class="left navs"><a href="">碎片</a></div>
+        <div class="left navs"><a href="">客户端</a></div>
+        <div id="header-right">
+            <div class="right">登录 / 注册</div>
+            <div class="right"><a href=""><img src="../image/pen.jpg" alt=""></a></div>
+        </div>
+    </div>
+</div>
+
+<!--content-->
+<div id="content">
+    <img src="../image/download-1.jpg" width="480" height="480" class="left"/>
+    <img src="../image/download-11.jpg" width="240" height="240" class="right"/>
+    <img src="../image/download-13.jpg" width="240" height="240" class="right"/>
+    <img src="../image/download-4.jpg" width="240" height="240" class="right"/>
+    <img src="../image/download-12.jpg" width="240" height="240" class="right"/>
+</div>
+
+<!--寿-->
+<div id="content2">
+    <!--标题-->
+    <div id="content2_top">
+        <img src="../image/download-15.png" height="15" width="15"/><span>寿</span>
+    </div>
+    <!--内容-->
+    <div id="content2_bigBlock">
+        <div class="content2_block left">
+            <img src="../image/download.jpg" height="300" width="300"/>
+            <div>
+                <a href="">听完这首歌我就要...</a>
+            </div>
+            <div>
+                <a href="">主播/夏阳的药物青春</a>
+            </div>
+            <div>8.3 K次播放| 评价: 18 | 喜欢: 279</div>
+        </div>
+        <div class="content2_block left" id="content2_block_2">
+            <img src="../image/download-10.jpg" height="300" width="300"/>
+            <div>
+                <a href="">列车向南开</a>
+            </div>
+            <div>
+                <a href="">主播/词不达意</a>
+            </div>
+            <div>7.1 k次播放| 评论：27 | 喜欢：203</div>
+        </div>
+        <div class="content2_block left">
+            <img src="../image/download-17.jpg" height="300" width="300"/>
+            <div>
+                <a href="">遇见</a>
+            </div>
+            <div>
+                <a href="">主播/乐文希</a>
+            </div>
+            <div>48.8 k次播放| 评论：182 | 喜欢：1.6 k</div>
+        </div>
+    </div>
+</div>
+
+<!--阅读-->
+<div id="read">
+    <!--标题-->
+    <div id="read_top">
+        <img src="../image/download-15.png" height="15" width="15"/><span>阅读| 读</span>
+    </div>
+
+    <!--每个块-->
+    <!--块1-->
+    <div class="read_block">
+        <div class="read_block_left left">
+            <div class="read_block_1"><a href="#">当我谈跑步时，我在谈爱情</a></div>
+            <div class="read_block_2"><a href="#">由/阿帆哒</a></div>
+
+            <div class="line"></div>
+
+            <div class="read_block_3">
+                <span>我辞职的理由是回家。在北京，平均跳槽时间是一年半，在所有辞职理由中，不到百分之二十是真实的。我在这家创业公司做了两年，职位是设计师，老板待我很好。   </span><span><a
+                    href="">查看全部</a></span>
+                <span>
+                    <img src="../image/download-4.png" height="10" width="10"/>
+                </span>
+            </div>
+            <div class="read_block_4">
+                2.8 k次阅读| 评论：42 | 喜欢：589
+            </div>
+
+        </div>
+
+
+        <div class="right">
+            <img src="../image/download-19.gif" height="216" width="300"/>
+        </div>
+
+    </div>
+
+
+    <!--块2-->
+    <div class="read_block">
+        <div class="read_block_left left">
+            <div class="read_block_1"><a href="#">礼物</a></div>
+            <div class="read_block_2"><a href="#">By / Whale小诺</a></div>
+
+            <div class="line"></div>
+
+            <div class="read_block_3">
+                <span>本篇为：“六年前的一桩诡异凶杀案9：记忆大师”侦探大象人设：嗅觉超人哑巴常理先将绳子系在十米高的树干上，在脖子套绳圈，往下跳，自身重力把颈椎扯断    </span><span><a
+                    href="">查看全部</a></span>
+                <span>
+                    <img src="../image/download-4.png" height="10" width="10"/>
+                </span>
+            </div>
+            <div class="read_block_4">
+                859次阅读| 评论：12 | 喜欢：92
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="../image/download-18.jpg" height="216" width="300"/>
+        </div>
+
+    </div>
+    <!--块3-->
+    <div class="read_block">
+        <div class="read_block_left left">
+            <div class="read_block_1"><a href="#">超能力</a></div>
+            <div class="read_block_2"><a href="#">By / Whale小诺</a></div>
+
+            <div class="line"></div>
+
+            <div class="read_block_3">
+                <span>01路过小区里公园的花坛时，她往往会在原地停留了片刻，像是在等候什么一样。等候之余，她会四处看看，趁没人注意的时候，她还会蹲下来，“喵喵喵“的叫    </span><span><a
+                    href="">查看全部</a></span>
+                <span>
+                    <img src="../image/download-4.png" height="10" width="10"/>
+                </span>
+            </div>
+            <div class="read_block_4">
+                534次阅读| 评论：2 | 喜欢：23
+            </div>
+
+        </div>
+
+
+        <div class="right">
+            <img src="../image/download-3.jpg" height="216" width="300"/>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--人气片客| 热门钢琴-->
+<div id="star_headline">
+    <img src="../image/download-15.png" height="15" width="15"/><span>人气片客| 热门钢琴</span>
+</div>
+<div id="star">
+    <div class="star_block">
+        <div>
+            <img src="../image/download-5.jpg" height="90" width="90" style="border-radius: 50%"/>
+            <img src="../image/yinyueren.png" alt="" width="52" height="19">
+        </div>
+        <div>
+            <div><a href="#">王睿雷</a></div>
+            <div></div>
+            <div>流行歌手王睿</div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
