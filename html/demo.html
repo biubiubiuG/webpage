@@ -47,6 +47,12 @@
         #header-outer {
             width: 100%;
             background: white;
+            position: fixed;
+            left: 0;
+            top:0;
+            z-index: 1;
+            opacity: 0.8;
+            transition: all 500ms;
 
         }
 
@@ -72,11 +78,17 @@
             height: 45px;
         }
 
+        #header-right div:nth-child(1):hover {
+            transition: background, color 1s;
+            background: #57ad68;
+            color: white;
+        }
+
         #header-right div:nth-child(1) {
-            border: 1px solid darkgreen;
+            border: 1px solid #78bc85;
             border-radius: 30px;
             padding: 12px 25px;
-            color: darkgreen;
+            color: #78bc85;
             margin-top: 12px;
         }
 
@@ -85,15 +97,112 @@
             margin-right: 20px;
         }
 
+
+        #zhanwei {
+            width: 100%;
+            height: 87px;
+        }
+
         /*************  content  ***************/
         #content {
             width: 960px;
             margin: 40px auto;
             overflow: hidden;
+        }
+
+        #content a {
+            color: white;
+        }
+
+        #content a:hover {
+            color: white;
+        }
+
+        .content_line {
+            width: 30px;
+            border: 1px solid white;
+            margin: 40px 0 10px 20px;
+        }
+
+        #content_block1 {
+            width: 480px;
+            height: 480px;
+            position: relative;
+            overflow: hidden;
 
         }
 
-        /*************  content2  ***************/
+        #content_block1:hover #content_block_text {
+            transition: opacity 1s;
+            opacity: 1;
+        }
+
+        #content_block1:hover #img1 {
+            transition: transform 1s;
+            transform: scale(1.2, 1.2);
+        }
+
+        #content_block_text {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 480px;
+            height: 100px;
+            position: absolute;
+            top: 380px;
+            left: 0;
+            opacity: 0;
+        }
+
+        #content_block_text span {
+            margin: 10px 0 0 20px;
+            font-size: 18px;
+        }
+
+        #content_block2 {
+            width: 480px;
+            height: 480px;
+            float: right;
+        }
+
+        .content_block2_block {
+            width: 240px;
+            height: 240px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content_block2_block_text {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 240px;
+            height: 50px;
+            position: absolute;
+            top: 190px;
+            left: 0;
+            opacity: 0;
+        }
+
+        .content_block2_block_text div:nth-child(1) {
+            width: 15px;
+            border: 1px solid white;
+            margin: 10px 0 5px 10px;
+        }
+
+        .content_block2_block_text span {
+            font-size: 10px;
+            margin: 5px 0 5px 10px;
+        }
+
+        .content_block2_block:hover .content_block2_block_text {
+            transition: opacity 1s;
+            opacity: 1;
+        }
+
+        .content_block2_block:hover .img {
+            transition: transform 1s;
+            transform: scale(1.2, 1.2);
+        }
+
+        /*************  寿  ***************/
         #content2_bigBlock {
             margin-top: 20px;
             overflow: hidden;
@@ -115,6 +224,37 @@
         .content2_block {
             background-color: white;
             border: 1px solid rgb(226, 226, 226);
+        }
+
+        .content2_block_img {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .content2_block_img > div {
+            width: 300px;
+            height: 300px;
+            background-color: #1a1818;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .content2_block_img > div > a > img {
+            margin: 108px;
+        }
+
+        .content2_block_img:hover .content2_block_img_mb {
+            transition: opacity 0.5s;
+            opacity: 0.5;
+        }
+
+        .content2_block_img:hover .img2 {
+            transition: transform 1s;
+            transform: scale(1.2, 1.2);
         }
 
         .content2_block > div:nth-child(2) a {
@@ -213,6 +353,7 @@
             width: 960px;
             margin: 50px auto 20px;
         }
+
         #star_headline span {
             margin-left: 20px;
         }
@@ -220,16 +361,203 @@
         #star {
             width: 960px;
             margin: 0 auto;
-        }
-        .star_block {
-            background-image: url("../image/download-16.png");
-            width: 230px;
-            height: 230px;
+            overflow: hidden;
         }
 
+        #star > div:nth-child(2) {
+            margin: 0 10px;
+        }
+
+        #star > div:nth-child(3) {
+            margin: 0 10px 0 0;
+        }
+
+        .star_block {
+            background-image: url("../image/download-16.png");
+            background-size: 240px 240px;
+            width: 230px;
+            height: 230px;
+            float: left;
+            border: 1px solid rgb(226, 226, 226);
+
+        }
+
+        .star_block_left {
+            width: 90px;
+            text-align: center;
+            margin: 50px 15px;
+        }
+
+        .star_block_left img:nth-child(1) {
+            border-radius: 50%;
+        }
+
+        .star_block_right {
+            margin: 65px 20px 0 0;
+        }
+
+        .star_block_right div:nth-child(2) {
+            width: 20px;
+            border: 1px solid black;
+            margin: 25px 0 10px 120px;
+        }
+
+        .star_block_right div:nth-child(3) {
+            font-size: 10px;
+        }
+
+        /*************查看更多***************/
+        #more {
+            width: 190px;
+            height: 55px;
+            border: 1px solid #78bc85;
+            margin: 80px auto;
+            border-radius: 50px;
+
+        }
+
+        #more > div {
+            width: 180px;
+            height: 45px;
+            background-color: #78bc85;
+            text-align: center;
+            color: white;
+            line-height: 45px;
+            margin: 5px auto;
+            border-radius: 50px;
+        }
+
+        #more > div:hover {
+            background: rgb(87, 160, 79);
+        }
+
+        /******************floor******************/
+
+        #floor {
+            height: 120px;
+            background: #1a1818;
+        }
+
+        #floor_width {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #floor_block1 {
+            margin: 32px 0;
+        }
+
+        #floor_block2 {
+            margin: 37px 10px;
+        }
+
+        #floor_block2 a {
+            color: #666;
+            font-size: 10px;
+            margin: 0 10px;
+        }
+
+        #floor_block2 span {
+            color: #666;
+            font-size: 10px;
+            margin: 0 10px;
+        }
+
+        #floor_block3 {
+            margin: 37px 0;
+        }
+
+        #floor_block3 div {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        #weibo {
+            opacity: 0.5;
+        }
+
+        #weibo:hover {
+            opacity: 1;
+        }
+
+        #shouji {
+            opacity: 0.5;
+        }
+
+        #shouji:hover {
+            opacity: 1;
+        }
+
+        #weixin {
+            opacity: 0.5;
+        }
+
+        #weixin:hover {
+            opacity: 1;
+        }
+
+        #floor_block3 div:nth-child(3) {
+            position: relative;
+        }
+
+        #QRcode {
+            position: absolute;
+            top: -250px;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 1px 1px 10px 1px darkgrey;
+        }
+
+        #QRcode img {
+            margin-top: 20px;
+        }
+
+        #trigon {
+            position: absolute;
+            left: -8px;
+            top: -50px;;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid white;
+        }
+
+        #QRcode_all {
+            opacity: 0;
+        }
+
+        /*****************回到顶部*****************/
+        #back_top_1 {
+            position: fixed;
+            right: 50px;
+            bottom: 200px;
+            opacity: 0;
+        }
+
+        #back_top_2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid rgb(218, 218, 218);
+            background-color: rgb(218, 218, 218);
+        }
+
+        #back_top_3 {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid white;
+            margin: 18px 0 0 15px;
+        }
 
 
     </style>
+    <script src="../js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <!--header-->
@@ -243,18 +571,70 @@
         <div class="left navs"><a href="">客户端</a></div>
         <div id="header-right">
             <div class="right">登录 / 注册</div>
-            <div class="right"><a href=""><img src="../image/pen.jpg" alt=""></a></div>
+            <div class="right"><img src="../image/pen.jpg" alt=""></div>
         </div>
     </div>
 </div>
 
+<div id="zhanwei"></div>
+
 <!--content-->
 <div id="content">
-    <img src="../image/download-1.jpg" width="480" height="480" class="left"/>
-    <img src="../image/download-11.jpg" width="240" height="240" class="right"/>
-    <img src="../image/download-13.jpg" width="240" height="240" class="right"/>
-    <img src="../image/download-4.jpg" width="240" height="240" class="right"/>
-    <img src="../image/download-12.jpg" width="240" height="240" class="right"/>
+    <div id="content_block1" class="left">
+        <a href="">
+            <img src="../image/download-1.jpg" width="480" height="480" id="img1"/>
+            <div id="content_block_text">
+                <div class="content_line"></div>
+                <span>这样锻炼，你才会掌握说话的力量</span>
+            </div>
+        </a>
+    </div>
+    <div id="content_block2">
+        <div class="content_block2_block">
+            <a href="">
+                <img src="../image/download-11.jpg" width="240" height="240" class="img"/>
+                <div class="content_block2_block_text">
+                    <div></div>
+                    <span>有社交恐惧症的你，该怎么克服？</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="content_block2_block">
+            <a href="">
+                <img src="../image/download-13.jpg" width="240" height="240" class="img"/>
+                <div class="content_block2_block_text">
+                    <div></div>
+                    <span>怎样找到自己真正想做的事？</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="content_block2_block">
+            <a href="">
+                <img src="../image/download-4.jpg" width="240" height="240" class="img"/>
+                <div class="content_block2_block_text">
+                    <div></div>
+                    <span>坚持写手帐135天，生活发生了哪些改变？</span>
+                </div>
+            </a>
+        </div>
+        <div class="content_block2_block">
+            <a href="">
+                <img src="../image/download-12.jpg" width="240" height="240" class="img"/>
+                <div class="content_block2_block_text">
+                    <div></div>
+                    <span>外公的两条命</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!--<img src="../image/download-13.jpg" width="240" height="240"/>-->
+    <!--<img src="../image/download-4.jpg" width="240" height="240"/>-->
+    <!--<img src="../image/download-12.jpg" width="240" height="240"/>-->
+
 </div>
 
 <!--寿-->
@@ -266,7 +646,15 @@
     <!--内容-->
     <div id="content2_bigBlock">
         <div class="content2_block left">
-            <img src="../image/download.jpg" height="300" width="300"/>
+            <div class="content2_block_img">
+                <img src="../image/download.jpg" height="300" width="300" class="img2"/>
+                <div class="content2_block_img_mb">
+                    <a href="">
+                        <img src="../image/download-20.png" height="82" width="82"/>
+                    </a>
+
+                </div>
+            </div>
             <div>
                 <a href="">听完这首歌我就要...</a>
             </div>
@@ -276,7 +664,15 @@
             <div>8.3 K次播放| 评价: 18 | 喜欢: 279</div>
         </div>
         <div class="content2_block left" id="content2_block_2">
-            <img src="../image/download-10.jpg" height="300" width="300"/>
+            <div class="content2_block_img">
+                <img src="../image/download-10.jpg" height="300" width="300" class="img2"/>
+                <div class="content2_block_img_mb">
+                    <a href="">
+                        <img src="../image/download-20.png" height="82" width="82"/>
+
+                    </a>
+                </div>
+            </div>
             <div>
                 <a href="">列车向南开</a>
             </div>
@@ -285,8 +681,18 @@
             </div>
             <div>7.1 k次播放| 评论：27 | 喜欢：203</div>
         </div>
+
         <div class="content2_block left">
-            <img src="../image/download-17.jpg" height="300" width="300"/>
+
+            <div class="content2_block_img">
+                <img src="../image/download-17.jpg" height="300" width="300" class="img2"/>
+                <div class="content2_block_img_mb">
+                    <a href="">
+                        <img src="../image/download-20.png" height="82" width="82"/>
+                    </a>
+                </div>
+            </div>
+
             <div>
                 <a href="">遇见</a>
             </div>
@@ -397,11 +803,11 @@
 </div>
 <div id="star">
     <div class="star_block">
-        <div>
-            <img src="../image/download-5.jpg" height="90" width="90" style="border-radius: 50%"/>
+        <div class="star_block_left left">
+            <img src="../image/download-5.jpg" height="90" width="90"/>
             <img src="../image/yinyueren.png" alt="" width="52" height="19">
         </div>
-        <div>
+        <div class="star_block_right">
             <div><a href="#">王睿雷</a></div>
             <div></div>
             <div>流行歌手王睿</div>
@@ -409,11 +815,143 @@
     </div>
 
 
-
-
-
-
+    <div class="star_block">
+        <div class="star_block_left left">
+            <img src="../image/download-8.jpg" height="90" width="90"/>
+            <img src="../image/yinyueren.png" alt="" width="52" height="19">
+        </div>
+        <div class="star_block_right">
+            <div><a href="#">陆深兽</a></div>
+            <div></div>
+            <div>片刻翻唱达人陆深深</div>
+        </div>
+    </div>
+    <div class="star_block">
+        <div class="star_block_left left">
+            <img src="../image/download-7.jpg" height="90" width="90"/>
+            <img src="../image/yinyueren.png" alt="" width="52" height="19">
+        </div>
+        <div class="star_block_right">
+            <div><a href="#">阿见</a></div>
+            <div></div>
+            <div>独立音乐人，电台主持人。</div>
+        </div>
+    </div>
+    <div class="star_block">
+        <div class="star_block_left left">
+            <img src="../image/download-9.jpg" height="90" width="90"/>
+            <img src="../image/zuozhe.png" alt="" width="52" height="19">
+        </div>
+        <div class="star_block_right">
+            <div><a href="#">贤菌</a></div>
+            <div></div>
+            <div>靠脸吃饭，臭不要脸！</div>
+        </div>
+    </div>
 </div>
+
+<!--查看更多-->
+<div id="more">
+    <div>查看更多精彩内容</div>
+</div>
+
+<!--floor-->
+<div id="floor">
+    <div id="floor_width">
+        <div class="left" id="floor_block1">
+            <img src="../image/download-8.png" alt="" height="50" width="100">
+        </div>
+        <div class="left" id="floor_block2">
+            <a href="">关于我们</a>
+            <a href="">友情链接</a>
+            <a href="">片刻关注</a>
+            <a href="">意见反馈</a>
+            <a href="">成长记忆</a>
+            <br>
+            <span>All rights reserved © 2016 pianke.me /蜀ICP备12022689号-1</span>
+        </div>
+        <div class="right" id="floor_block3">
+            <div>
+                <img src="../image/shouji.png" alt="" height="44" width="44" id="shouji">
+            </div>
+            <div>
+                <img src="../image/weibo.png" alt="" height="44" width="44" id="weibo">
+            </div>
+            <div>
+                <img src="../image/weixin.png" alt="" height="44" width="44" id="weixin">
+                <div id="QRcode_all">
+                    <div id="QRcode">
+                        <img src="../image/download-2.png" height="160" width="160"/>
+                    </div>
+                    <div id="trigon"></div>
+                </div>
+            </div>
+            <div>
+                <img src="../image/download-9.png" alt="" height="44" width="100">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--回到顶部-->
+<div id="back_top_1">
+    <div id="back_top_2">
+        <div id="back_top_3">
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+    $("#weixin").mouseover(function () {
+        $("#QRcode_all").css("opacity", "1");
+    })
+    $("#weixin").mouseout(function () {
+        $("#QRcode_all").css("opacity", "0");
+    })
+
+    $("#back_top_1").mouseover(function () {
+        $("#back_top_2").css("backgroundColor", "#78bc85");
+    })
+    $("#back_top_1").mouseout(function () {
+        $("#back_top_2").css("backgroundColor", "rgb(218,218,218)");
+    })
+
+
+    $("#back_top_1").click(function () {
+        $("html,body").animate({scrollTop:0}, 200);
+    })
+
+
+    var initTop = 0;
+    $(window).scroll(function () {
+
+        var scrollTop = $(document).scrollTop();
+        console.log(scrollTop);
+        if (scrollTop >= 1500) {
+            $("#back_top_1").css("opacity", "1");
+        } else if (scrollTop < 1500) {
+            $("#back_top_1").css("opacity", "0");
+        }
+        if(scrollTop >= 50) {
+            $("#header-outer").css("top","-78px");
+            if (scrollTop > initTop) {
+                $("#header-outer").css("top","-78px");
+            } else {
+                $("#header-outer").css("top","0");
+            }
+            initTop = scrollTop;
+        }else if(scrollTop < 50) {
+            $("#header-outer").css("top","0");
+        }
+
+
+    });
+
+
+</script>
 
 </body>
 </html>
