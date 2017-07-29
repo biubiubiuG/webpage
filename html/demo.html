@@ -120,7 +120,7 @@
 
         .content_line {
             width: 30px;
-            border: 1px solid white;
+            border-bottom: 1px solid white;
             margin: 40px 0 10px 20px;
         }
 
@@ -183,7 +183,7 @@
 
         .content_block2_block_text div:nth-child(1) {
             width: 15px;
-            border: 1px solid white;
+            border-bottom: 1px solid white;
             margin: 10px 0 5px 10px;
         }
 
@@ -322,7 +322,7 @@
 
         .line {
             width: 30px;
-            border: 1px solid black;
+            border-bottom: 1px solid black;
             margin: 5px 10px;
         }
 
@@ -398,7 +398,7 @@
 
         .star_block_right div:nth-child(2) {
             width: 20px;
-            border: 1px solid black;
+            border-bottom: 1px solid black;
             margin: 25px 0 10px 120px;
         }
 
@@ -925,6 +925,8 @@
     })
 
 
+
+
     var initTop = 0;
     $(window).scroll(function () {
 
@@ -943,6 +945,8 @@
                 $("#header-outer").css("top","0");
             }
             initTop = scrollTop;
+
+
         }else if(scrollTop < 50) {
             $("#header-outer").css("top","0");
         }
